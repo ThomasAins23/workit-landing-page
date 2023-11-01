@@ -1,0 +1,24 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-purple: hsl(273, 85%, 13%);
+    --eucalyptus: hsl(150, 100%, 63%);
+    --davys-grey: hsl(271, 12%, 34%);
+    --ghost-white: hsl(276, 100%, 99%);
+}
+
+body {
+    background: var(--white);
+    color: var(--dark-purple);
+    font-family: 'Manrope', serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', sans-serif;
+    color: var(--dark-purple);
+}
+
+h3 {
+    color: var(--dark-purple);
+}
