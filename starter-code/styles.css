@@ -1,3 +1,35 @@
+/*
+
+Global Styles
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.6;
+}
+
 :root {
     --white: hsl(0, 0%, 100%);
     --dark-purple: hsl(273, 85%, 13%);
@@ -9,14 +41,65 @@
 body {
     background: var(--white);
     color: var(--dark-purple);
+    display: grid;
+    height: 100vh;
     font-family: 'Manrope', serif;
+    font-size: 1.125rem;
+}
+
+/*
+
+Header
+
+*/
+
+header {
+    background-image: url('./assets/images/bg-dark-purple-top.svg');
+    position: relative;
+    width: 90rem;
+    height: 45.625rem;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem
+}
+
+.header-nav a {
+    color: var(--white);
+    transition: color .12s ease-in;
+}
+
+.header-nav a:hover {
+    color: var(--eucalyptus);
+}
+
+.green-underline {
+    background-color: var(--eucalyptus);
+    height: 0.1875rem;
+    width: 100%;
+    margin-top: 0.44rem;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Fraunces', sans-serif;
-    color: var(--dark-purple);
+    color: var(--white);
+}
+
+h1 {
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Heading L */
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5rem;
+    width: 39.6875rem;
 }
 
 h3 {
